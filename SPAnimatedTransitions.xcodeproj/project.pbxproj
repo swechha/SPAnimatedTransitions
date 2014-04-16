@@ -19,6 +19,10 @@
 		BF5A305E18FED69F001E3D30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5A304618FED69F001E3D30 /* UIKit.framework */; };
 		BF5A306618FED69F001E3D30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF5A306418FED69F001E3D30 /* InfoPlist.strings */; };
 		BF5A306818FED69F001E3D30 /* SPAnimatedTransitionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A306718FED69F001E3D30 /* SPAnimatedTransitionsTests.m */; };
+		BF5A307318FEDAFA001E3D30 /* SPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A307218FEDAF9001E3D30 /* SPNavigationController.m */; };
+		BF5A307918FEE34D001E3D30 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A307618FEE34D001E3D30 /* FirstViewController.m */; };
+		BF5A307A18FEE34D001E3D30 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A307818FEE34D001E3D30 /* SecondViewController.m */; };
+		BF5A308318FEF07A001E3D30 /* SPScaleOutAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A308218FEF07A001E3D30 /* SPScaleOutAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,14 @@
 		BF5A306318FED69F001E3D30 /* SPAnimatedTransitionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SPAnimatedTransitionsTests-Info.plist"; sourceTree = "<group>"; };
 		BF5A306518FED69F001E3D30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF5A306718FED69F001E3D30 /* SPAnimatedTransitionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAnimatedTransitionsTests.m; sourceTree = "<group>"; };
+		BF5A307118FEDAF9001E3D30 /* SPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPNavigationController.h; path = SPAnimatedTransitions/SPNavigationController.h; sourceTree = "<group>"; };
+		BF5A307218FEDAF9001E3D30 /* SPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPNavigationController.m; path = SPAnimatedTransitions/SPNavigationController.m; sourceTree = "<group>"; };
+		BF5A307518FEE34D001E3D30 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BF5A307618FEE34D001E3D30 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BF5A307718FEE34D001E3D30 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BF5A307818FEE34D001E3D30 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		BF5A308118FEF07A001E3D30 /* SPScaleOutAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPScaleOutAnimator.h; path = SPAnimatedTransitions/SPScaleOutAnimator.h; sourceTree = "<group>"; };
+		BF5A308218FEF07A001E3D30 /* SPScaleOutAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPScaleOutAnimator.m; path = SPAnimatedTransitions/SPScaleOutAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +119,11 @@
 		BF5A304818FED69F001E3D30 /* SPAnimatedTransitions */ = {
 			isa = PBXGroup;
 			children = (
-				BF5A305118FED69F001E3D30 /* AppDelegate.h */,
-				BF5A305218FED69F001E3D30 /* AppDelegate.m */,
+				BF5A307418FEDB06001E3D30 /* Example */,
+				BF5A307118FEDAF9001E3D30 /* SPNavigationController.h */,
+				BF5A307218FEDAF9001E3D30 /* SPNavigationController.m */,
+				BF5A308118FEF07A001E3D30 /* SPScaleOutAnimator.h */,
+				BF5A308218FEF07A001E3D30 /* SPScaleOutAnimator.m */,
 				BF5A305418FED69F001E3D30 /* Images.xcassets */,
 				BF5A304918FED69F001E3D30 /* Supporting Files */,
 			);
@@ -142,6 +157,19 @@
 				BF5A306418FED69F001E3D30 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF5A307418FEDB06001E3D30 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A305118FED69F001E3D30 /* AppDelegate.h */,
+				BF5A305218FED69F001E3D30 /* AppDelegate.m */,
+				BF5A307518FEE34D001E3D30 /* FirstViewController.h */,
+				BF5A307618FEE34D001E3D30 /* FirstViewController.m */,
+				BF5A307718FEE34D001E3D30 /* SecondViewController.h */,
+				BF5A307818FEE34D001E3D30 /* SecondViewController.m */,
+			);
+			name = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5A307A18FEE34D001E3D30 /* SecondViewController.m in Sources */,
 				BF5A305318FED69F001E3D30 /* AppDelegate.m in Sources */,
+				BF5A307318FEDAFA001E3D30 /* SPNavigationController.m in Sources */,
 				BF5A304F18FED69F001E3D30 /* main.m in Sources */,
+				BF5A307918FEE34D001E3D30 /* FirstViewController.m in Sources */,
+				BF5A308318FEF07A001E3D30 /* SPScaleOutAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +471,7 @@
 				BF5A306D18FED69F001E3D30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF5A306E18FED69F001E3D30 /* Build configuration list for PBXNativeTarget "SPAnimatedTransitionsTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +480,7 @@
 				BF5A307018FED69F001E3D30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,13 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "SPNavigationController.h"
+#import "FirstViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    //SPNavigationController as the root view controller
+    FirstViewController *firstViewController = [[FirstViewController alloc] init];
+    SPNavigationController *navigationController = [[SPNavigationController alloc] initWithRootViewController:firstViewController];
+    [navigationController setNavigationBarHidden:YES];
+    [self.window setRootViewController:navigationController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
