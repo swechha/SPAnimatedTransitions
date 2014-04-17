@@ -8,6 +8,7 @@
 
 #import "SPNavigationController.h"
 #import "SPScaleOutAnimator.h"
+#import "SPRotateAndScaleOutAnimator.h"
 
 @interface SPNavigationController ()
 @property id<UIViewControllerAnimatedTransitioning> animator;
@@ -58,6 +59,11 @@
         
         case SPTransitionAnimationStyleScaleOut:
             return [[SPScaleOutAnimator alloc] init];
+            break;
+            
+        case SPTransitionAnimationStyleRotateAndScaleOut:
+            return [[SPRotateAndScaleOutAnimator alloc] init];
+            break;
         
         default:
             return nil;

@@ -23,6 +23,7 @@
 		BF5A307918FEE34D001E3D30 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A307618FEE34D001E3D30 /* FirstViewController.m */; };
 		BF5A307A18FEE34D001E3D30 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A307818FEE34D001E3D30 /* SecondViewController.m */; };
 		BF5A308318FEF07A001E3D30 /* SPScaleOutAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A308218FEF07A001E3D30 /* SPScaleOutAnimator.m */; };
+		BFEC6DA119002EFB00520CFA /* SPRotateAndScaleOutAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEC6DA019002EFB00520CFA /* SPRotateAndScaleOutAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		BF5A307818FEE34D001E3D30 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BF5A308118FEF07A001E3D30 /* SPScaleOutAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPScaleOutAnimator.h; path = SPAnimatedTransitions/SPScaleOutAnimator.h; sourceTree = "<group>"; };
 		BF5A308218FEF07A001E3D30 /* SPScaleOutAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPScaleOutAnimator.m; path = SPAnimatedTransitions/SPScaleOutAnimator.m; sourceTree = "<group>"; };
+		BFEC6D9F19002EFB00520CFA /* SPRotateAndScaleOutAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPRotateAndScaleOutAnimator.h; path = SPAnimatedTransitions/SPRotateAndScaleOutAnimator.h; sourceTree = "<group>"; };
+		BFEC6DA019002EFB00520CFA /* SPRotateAndScaleOutAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPRotateAndScaleOutAnimator.m; path = SPAnimatedTransitions/SPRotateAndScaleOutAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				BF5A307218FEDAF9001E3D30 /* SPNavigationController.m */,
 				BF5A308118FEF07A001E3D30 /* SPScaleOutAnimator.h */,
 				BF5A308218FEF07A001E3D30 /* SPScaleOutAnimator.m */,
+				BFEC6D9F19002EFB00520CFA /* SPRotateAndScaleOutAnimator.h */,
+				BFEC6DA019002EFB00520CFA /* SPRotateAndScaleOutAnimator.m */,
 				BF5A305418FED69F001E3D30 /* Images.xcassets */,
 				BF5A304918FED69F001E3D30 /* Supporting Files */,
 			);
@@ -267,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFEC6DA119002EFB00520CFA /* SPRotateAndScaleOutAnimator.m in Sources */,
 				BF5A307A18FEE34D001E3D30 /* SecondViewController.m in Sources */,
 				BF5A305318FED69F001E3D30 /* AppDelegate.m in Sources */,
 				BF5A307318FEDAFA001E3D30 /* SPNavigationController.m in Sources */,

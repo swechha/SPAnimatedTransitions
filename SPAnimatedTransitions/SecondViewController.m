@@ -44,7 +44,7 @@
 - (void)popViewController
 {
     SPNavigationController *myNavigationController = (SPNavigationController *)self.navigationController;
-    [myNavigationController popViewControllerUsingAnimation:SPTransitionAnimationStyleScaleOut];
+    [myNavigationController popViewControllerUsingAnimation:SPTransitionAnimationStyleRotateAndScaleOut];
 }
 
 - (void)didReceiveMemoryWarning
