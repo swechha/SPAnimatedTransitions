@@ -36,7 +36,7 @@
     [self.view addGestureRecognizer:recognizer];
 }
 
-- (void)handlePan:(UIScreenEdgePanGestureRecognizer)recognizer
+- (void)handlePan:(UIScreenEdgePanGestureRecognizer *)recognizer
 {
     CGPoint translation = [recognizer translationInView:self.view];
     
@@ -44,7 +44,7 @@
         self.interactionController = [[UIPercentDrivenInteractiveTransition alloc] init];
         [self popViewControllerAnimated:YES];
     } else if (recognizer.state == UIGestureRecognizerStateChanged) {
-        CGFloat d = fabs(translation.x/CGRectGetWidth(self.view.bounds))
+        CGFloat d = fabs(translation.x/CGRectGetWidth(self.view.bounds));
         [self.interactionController updateInteractiveTransition:d];
     } else if (recognizer.state == UIGestureRecognizerStateEnded) {
         if ([recognizer velocityInView:self.view].x > 0) {
@@ -106,7 +106,7 @@
 
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
 {
-    return self.interactiveController
+    return self.interactionController;
 }
 
 @end
