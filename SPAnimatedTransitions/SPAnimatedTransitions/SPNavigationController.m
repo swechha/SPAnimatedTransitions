@@ -12,6 +12,7 @@
 
 @interface SPNavigationController ()
 @property id<UIViewControllerAnimatedTransitioning> animator;
+@property UIPercentDrivenInteractiveTransition *interactionController;
 @end
 
 @implementation SPNavigationController
@@ -28,6 +29,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //Set up interaction controller
+    UIScreenEdgePanGestureRecognizer *recognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+    [recognizer setEdges:UIRectEdgeLeft];
+    [self.view addGestureRecognizer:recognizer];
+}
+
+- (void)handlePan:(UIScreenEdgePanGestureRecognizer)recognizer
+{
+    CGPoint translation = [recognizer translationInView:self.view];
+    
+    if (recognizer.state == UIGestureRecognizerStateBegan) {
+        self.interactionController = [[UIPercentDrivenInteractiveTransition alloc] init];
+        [self popViewControllerAnimated:YES];
+    } else if (recognizer.state == UIGestureRecognizerStateChanged) {
+        CGFloat d = fabs(translation.x/CGRectGetWidth(self.view.bounds))
+        [self.interactionController updateInteractiveTransition:d];
+    } else if (recognizer.state == UIGestureRecognizerStateEnded) {
+        if ([recognizer velocityInView:self.view].x > 0) {
+            [self.interactionController finishInteractiveTransition];
+        } else {
+            [self.interactionController cancelInteractiveTransition];
+        }
+        self.interactionController = nil;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,6 +102,11 @@
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
 {
     return self.animator;
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
+{
+    return self.interactiveController
 }
 
 @end
