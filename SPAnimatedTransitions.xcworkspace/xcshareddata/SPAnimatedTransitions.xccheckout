@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1CE9B5CE-9C39-4304-BAC7-C58E71ECFB89</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SPAnimatedTransitions</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B6F6057C-DDE4-41EF-8FF1-5CB4232BE585</key>
+		<string>ssh://github.com/swechha/SPAnimatedTransitions.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SPAnimatedTransitions.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B6F6057C-DDE4-41EF-8FF1-5CB4232BE585</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/swechha/SPAnimatedTransitions.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B6F6057C-DDE4-41EF-8FF1-5CB4232BE585</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B6F6057C-DDE4-41EF-8FF1-5CB4232BE585</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SPAnimatedTransitions</string>
+		</dict>
+	</array>
+</dict>
+</plist>

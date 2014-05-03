@@ -11,7 +11,10 @@
 typedef NS_ENUM(NSInteger, SPTransitionAnimationStyle) {
     SPTransitionAnimationStyleDefault,
     SPTransitionAnimationStyleScaleOut,
-    SPTransitionAnimationStyleRotateAndScaleOut
+    SPTransitionAnimationStyleRotateAndScaleOut,
+    SPTransitionAnimationStyleSpringExpand,
+    SPTransitionAnimationStyleSpringLeftToRight,
+    SPTransitionAnimationStyleSpringRightToLeft
 };
 
 @interface SPNavigationController : UINavigationController <UINavigationControllerDelegate>

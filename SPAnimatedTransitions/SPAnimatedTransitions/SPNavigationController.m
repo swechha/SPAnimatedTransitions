@@ -9,6 +9,9 @@
 #import "SPNavigationController.h"
 #import "SPScaleOutAnimator.h"
 #import "SPRotateAndScaleOutAnimator.h"
+#import "SPSpringExpandAnimator.h"
+#import "SPSpringLeftToRightAnimator.h"
+#import "SPSpringRightToLeftAnimator.h"
 
 @interface SPNavigationController ()
 @property id<UIViewControllerAnimatedTransitioning> animator;
@@ -89,6 +92,18 @@
             
         case SPTransitionAnimationStyleRotateAndScaleOut:
             return [[SPRotateAndScaleOutAnimator alloc] init];
+            break;
+            
+        case SPTransitionAnimationStyleSpringExpand:
+            return [[SPSpringExpandAnimator alloc] init];
+            break;
+            
+        case SPTransitionAnimationStyleSpringLeftToRight:
+            return [[SPSpringLeftToRightAnimator alloc] init];
+            break;
+        
+        case SPTransitionAnimationStyleSpringRightToLeft:
+            return [[SPSpringRightToLeftAnimator alloc] init];
             break;
         
         default:

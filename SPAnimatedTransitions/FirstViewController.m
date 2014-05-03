@@ -33,7 +33,7 @@
     
     UIButton *nextButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
     nextButton.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
-    [nextButton setBackgroundColor:[UIColor orangeColor]];
+    [nextButton setBackgroundColor:[UIColor clearColor]];
     [nextButton setTitle:@"Next" forState:UIControlStateNormal];
     [nextButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [nextButton.titleLabel setFont:[UIFont fontWithName:@"Avenir" size:32]];
@@ -46,7 +46,7 @@
 {
     SPNavigationController *myNavigationController = (SPNavigationController *)self.navigationController;
     SecondViewController *secondViewController = [[SecondViewController alloc] init];
-    [myNavigationController pushViewController:secondViewController usingAnimation:SPTransitionAnimationStyleScaleOut];
+    [myNavigationController pushViewController:secondViewController usingAnimation:SPTransitionAnimationStyleSpringRightToLeft];
 }
 
 - (void)didReceiveMemoryWarning

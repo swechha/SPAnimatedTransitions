@@ -32,7 +32,7 @@
     
     UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
     backButton.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
-    [backButton setBackgroundColor:[UIColor darkGrayColor]];
+    [backButton setBackgroundColor:[UIColor clearColor]];
     [backButton setTitle:@"Back" forState:UIControlStateNormal];
     [backButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [backButton.titleLabel setFont:[UIFont fontWithName:@"Avenir" size:32]];
@@ -44,7 +44,7 @@
 - (void)popViewController
 {
     SPNavigationController *myNavigationController = (SPNavigationController *)self.navigationController;
-    [myNavigationController popViewControllerUsingAnimation:SPTransitionAnimationStyleRotateAndScaleOut];
+    [myNavigationController popViewControllerUsingAnimation:SPTransitionAnimationStyleSpringLeftToRight];
 }
 
 - (void)didReceiveMemoryWarning

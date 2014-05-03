@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E618456C92A485E8A8134F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E99DC31A3E48EC944D465F /* libPods.a */; };
+		BF113BD3191541BA00451A71 /* SPSpringExpandAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF113BD2191541BA00451A71 /* SPSpringExpandAnimator.m */; };
+		BF113BD61915575E00451A71 /* SPSpringLeftToRightAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF113BD51915575E00451A71 /* SPSpringLeftToRightAnimator.m */; };
+		BF113BD919155DB200451A71 /* SPSpringRightToLeftAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF113BD819155DB200451A71 /* SPSpringRightToLeftAnimator.m */; };
 		BF5A304318FED69F001E3D30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5A304218FED69F001E3D30 /* Foundation.framework */; };
 		BF5A304518FED69F001E3D30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5A304418FED69F001E3D30 /* CoreGraphics.framework */; };
 		BF5A304718FED69F001E3D30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5A304618FED69F001E3D30 /* UIKit.framework */; };
@@ -37,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D81A2F28068406EA58E1E50 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		BF113BD1191541BA00451A71 /* SPSpringExpandAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPSpringExpandAnimator.h; path = SPAnimatedTransitions/SPSpringExpandAnimator.h; sourceTree = "<group>"; };
+		BF113BD2191541BA00451A71 /* SPSpringExpandAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPSpringExpandAnimator.m; path = SPAnimatedTransitions/SPSpringExpandAnimator.m; sourceTree = "<group>"; };
+		BF113BD41915575E00451A71 /* SPSpringLeftToRightAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPSpringLeftToRightAnimator.h; path = SPAnimatedTransitions/SPSpringLeftToRightAnimator.h; sourceTree = "<group>"; };
+		BF113BD51915575E00451A71 /* SPSpringLeftToRightAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPSpringLeftToRightAnimator.m; path = SPAnimatedTransitions/SPSpringLeftToRightAnimator.m; sourceTree = "<group>"; };
+		BF113BD719155DB200451A71 /* SPSpringRightToLeftAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPSpringRightToLeftAnimator.h; path = SPAnimatedTransitions/SPSpringRightToLeftAnimator.h; sourceTree = "<group>"; };
+		BF113BD819155DB200451A71 /* SPSpringRightToLeftAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPSpringRightToLeftAnimator.m; path = SPAnimatedTransitions/SPSpringRightToLeftAnimator.m; sourceTree = "<group>"; };
 		BF5A303F18FED69F001E3D30 /* SPAnimatedTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPAnimatedTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5A304218FED69F001E3D30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF5A304418FED69F001E3D30 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,6 +74,7 @@
 		BF5A308218FEF07A001E3D30 /* SPScaleOutAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPScaleOutAnimator.m; path = SPAnimatedTransitions/SPScaleOutAnimator.m; sourceTree = "<group>"; };
 		BFEC6D9F19002EFB00520CFA /* SPRotateAndScaleOutAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPRotateAndScaleOutAnimator.h; path = SPAnimatedTransitions/SPRotateAndScaleOutAnimator.h; sourceTree = "<group>"; };
 		BFEC6DA019002EFB00520CFA /* SPRotateAndScaleOutAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPRotateAndScaleOutAnimator.m; path = SPAnimatedTransitions/SPRotateAndScaleOutAnimator.m; sourceTree = "<group>"; };
+		E1E99DC31A3E48EC944D465F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,7 @@
 				BF5A304518FED69F001E3D30 /* CoreGraphics.framework in Frameworks */,
 				BF5A304718FED69F001E3D30 /* UIKit.framework in Frameworks */,
 				BF5A304318FED69F001E3D30 /* Foundation.framework in Frameworks */,
+				3E618456C92A485E8A8134F0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +109,7 @@
 				BF5A306118FED69F001E3D30 /* SPAnimatedTransitionsTests */,
 				BF5A304118FED69F001E3D30 /* Frameworks */,
 				BF5A304018FED69F001E3D30 /* Products */,
+				0D81A2F28068406EA58E1E50 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +129,7 @@
 				BF5A304418FED69F001E3D30 /* CoreGraphics.framework */,
 				BF5A304618FED69F001E3D30 /* UIKit.framework */,
 				BF5A305B18FED69F001E3D30 /* XCTest.framework */,
+				E1E99DC31A3E48EC944D465F /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +142,12 @@
 				BF5A307218FEDAF9001E3D30 /* SPNavigationController.m */,
 				BF5A308118FEF07A001E3D30 /* SPScaleOutAnimator.h */,
 				BF5A308218FEF07A001E3D30 /* SPScaleOutAnimator.m */,
+				BF113BD1191541BA00451A71 /* SPSpringExpandAnimator.h */,
+				BF113BD2191541BA00451A71 /* SPSpringExpandAnimator.m */,
+				BF113BD41915575E00451A71 /* SPSpringLeftToRightAnimator.h */,
+				BF113BD51915575E00451A71 /* SPSpringLeftToRightAnimator.m */,
+				BF113BD719155DB200451A71 /* SPSpringRightToLeftAnimator.h */,
+				BF113BD819155DB200451A71 /* SPSpringRightToLeftAnimator.m */,
 				BFEC6D9F19002EFB00520CFA /* SPRotateAndScaleOutAnimator.h */,
 				BFEC6DA019002EFB00520CFA /* SPRotateAndScaleOutAnimator.m */,
 				BF5A305418FED69F001E3D30 /* Images.xcassets */,
@@ -184,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF5A306B18FED69F001E3D30 /* Build configuration list for PBXNativeTarget "SPAnimatedTransitions" */;
 			buildPhases = (
+				682E679FD9F54E739D224450 /* Check Pods Manifest.lock */,
 				BF5A303B18FED69F001E3D30 /* Sources */,
 				BF5A303C18FED69F001E3D30 /* Frameworks */,
 				BF5A303D18FED69F001E3D30 /* Resources */,
+				EF192DFDC8AA482480DCD981 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +290,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		682E679FD9F54E739D224450 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF192DFDC8AA482480DCD981 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF5A303B18FED69F001E3D30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -276,8 +332,11 @@
 				BF5A307A18FEE34D001E3D30 /* SecondViewController.m in Sources */,
 				BF5A305318FED69F001E3D30 /* AppDelegate.m in Sources */,
 				BF5A307318FEDAFA001E3D30 /* SPNavigationController.m in Sources */,
+				BF113BD3191541BA00451A71 /* SPSpringExpandAnimator.m in Sources */,
 				BF5A304F18FED69F001E3D30 /* main.m in Sources */,
 				BF5A307918FEE34D001E3D30 /* FirstViewController.m in Sources */,
+				BF113BD919155DB200451A71 /* SPSpringRightToLeftAnimator.m in Sources */,
+				BF113BD61915575E00451A71 /* SPSpringLeftToRightAnimator.m in Sources */,
 				BF5A308318FEF07A001E3D30 /* SPScaleOutAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +453,7 @@
 		};
 		BF5A306C18FED69F001E3D30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D81A2F28068406EA58E1E50 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -407,6 +467,7 @@
 		};
 		BF5A306D18FED69F001E3D30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D81A2F28068406EA58E1E50 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
