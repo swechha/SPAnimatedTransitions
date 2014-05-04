@@ -17,7 +17,7 @@ In the view controller
 
 Push the next view controller
 
-```[myNavigationController pushViewController:secondViewController usingAnimation:SPTransitionAnimationStyleSpringRightToLeft];```
+```[myNavigationController pushViewController:nextViewController usingAnimation:SPTransitionAnimationStyleSpringRightToLeft];```
 
 The animation styles (so far) are mentioned below
 
