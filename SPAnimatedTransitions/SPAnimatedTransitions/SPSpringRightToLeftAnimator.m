@@ -24,16 +24,26 @@
     [[transitionContext containerView] addSubview:toViewController.view];
     [[transitionContext containerView] addSubview:fromViewController.view];
     
-    POPSpringAnimation *leftToRightAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionX];
-    leftToRightAnimation.fromValue = @(3*([[UIScreen mainScreen] bounds].size.width/2));
-    leftToRightAnimation.toValue = @([[UIScreen mainScreen] bounds].size.width/2);
-    leftToRightAnimation.dynamicsFriction = 5.0;
-    leftToRightAnimation.springBounciness = 10.0;
-    leftToRightAnimation.springSpeed = 2.0;
+    POPSpringAnimation *rightToLeftAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionX];
+    rightToLeftAnimation.fromValue = @(3*([[UIScreen mainScreen] bounds].size.width/2));
+    rightToLeftAnimation.toValue = @([[UIScreen mainScreen] bounds].size.width/2);
+    rightToLeftAnimation.dynamicsFriction = 5.0;
+    rightToLeftAnimation.springBounciness = 10.0;
+    rightToLeftAnimation.springSpeed = 2.0;
     
-    [toViewController.view.layer pop_addAnimation:leftToRightAnimation forKey:@"leftToRightAnimation"];
+    POPSpringAnimation *prevViewRightToLeftAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionX];
+    prevViewRightToLeftAnimation.fromValue = @([[UIScreen mainScreen] bounds].size.width/2);
+    prevViewRightToLeftAnimation.toValue = @(-[[UIScreen mainScreen] bounds].size.width/2);
+    prevViewRightToLeftAnimation.dynamicsFriction = 5.0;
+    prevViewRightToLeftAnimation.springBounciness = 10.0;
+    prevViewRightToLeftAnimation.springSpeed = 2.0;
     
-    [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+    [toViewController.view.layer pop_addAnimation:rightToLeftAnimation forKey:@"rightToLeftAnimation"];
+    [fromViewController.view.layer pop_addAnimation:prevViewRightToLeftAnimation forKey:@"prevViewRightToLeftAnimation"];
+    
+    rightToLeftAnimation.completionBlock = ^(POPAnimation *a, BOOL finished) {
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+    };
 }
 
 

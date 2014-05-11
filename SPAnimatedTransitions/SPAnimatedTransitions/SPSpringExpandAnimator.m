@@ -35,7 +35,9 @@
     
     [toViewController.view.layer pop_addAnimation:expandAnimation forKey:@"expandAnimation"];
     
-    [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+    expandAnimation.completionBlock = ^(POPAnimation *a, BOOL finished) {
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+    };
 }
 
 @end

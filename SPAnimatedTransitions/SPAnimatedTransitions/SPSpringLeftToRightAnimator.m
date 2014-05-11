@@ -31,9 +31,19 @@
     leftToRightAnimation.springBounciness = 10.0;
     leftToRightAnimation.springSpeed = 2.0;
     
-    [toViewController.view.layer pop_addAnimation:leftToRightAnimation forKey:@"leftToRightAnimation"];
+    POPSpringAnimation *prevViewLeftToRightAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionX];
+    prevViewLeftToRightAnimation.fromValue = @([[UIScreen mainScreen] bounds].size.width/2);
+    prevViewLeftToRightAnimation.toValue = @(3*([[UIScreen mainScreen] bounds].size.width/2));
+    prevViewLeftToRightAnimation.dynamicsFriction = 5.0;
+    prevViewLeftToRightAnimation.springBounciness = 10.0;
+    prevViewLeftToRightAnimation.springSpeed = 2.0;
     
-    [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+    [toViewController.view.layer pop_addAnimation:leftToRightAnimation forKey:@"leftToRightAnimation"];
+    [fromViewController.view.layer pop_addAnimation:prevViewLeftToRightAnimation forKey:@"prevViewLeftToRightAnimation"];
+    
+    leftToRightAnimation.completionBlock = ^(POPAnimation *a, BOOL finished) {
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+    };
 }
 
 
